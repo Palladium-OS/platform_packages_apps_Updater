@@ -157,4 +157,7 @@
 
 	<string name="changelog_url" translatable="false">https://raw.githubusercontent.com/PalladiumOS-Devices/DevicesChangelog/11/<xliff:g id="device_name">%1$s</xliff:g>.txt</string>
     <string name="changelog_fail">Failed to retrieve changelog or changelog unavailable</string>
+
+    <!-- Maintainer-->
+    <string name="maintainer_name">Whom To Blame: <xliff:g id="maintainer" example="Subins Mani">%1$s</xliff:g></string>
 </resources>
