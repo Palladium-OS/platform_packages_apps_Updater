@@ -93,12 +93,12 @@ public class UpdatesListAdapter extends RecyclerView.Adapter<UpdatesListAdapter.
         DELETE,
         CANCEL_INSTALLATION,
         REBOOT,
-		CHANGELOG,
+        CHANGELOG,
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         private Button mAction;
-		private Button mChangelog;
+        private Button mChangelog;
 
         private TextView mBuildDate;
         private TextView mBuildVersion;
@@ -110,7 +110,7 @@ public class UpdatesListAdapter extends RecyclerView.Adapter<UpdatesListAdapter.
         public ViewHolder(final View view) {
             super(view);
             mAction = (Button) view.findViewById(R.id.update_action);
-			mChangelog = (Button) view.findViewById(R.id.update_changelog);
+            mChangelog = (Button) view.findViewById(R.id.update_changelog);
 
             mBuildDate = (TextView) view.findViewById(R.id.build_date);
             mBuildVersion = (TextView) view.findViewById(R.id.build_version);
@@ -206,7 +206,7 @@ public class UpdatesListAdapter extends RecyclerView.Adapter<UpdatesListAdapter.
         viewHolder.mProgressBar.setVisibility(View.VISIBLE);
         viewHolder.mProgressText.setVisibility(View.VISIBLE);
         viewHolder.mBuildSize.setVisibility(View.INVISIBLE);
-		setButtonAction(viewHolder.mChangelog, Action.CHANGELOG, downloadId, true);
+        setButtonAction(viewHolder.mChangelog, Action.CHANGELOG, downloadId, true);
     }
 
     private void handleNotActiveStatus(ViewHolder viewHolder, UpdateInfo update) {
@@ -236,7 +236,7 @@ public class UpdatesListAdapter extends RecyclerView.Adapter<UpdatesListAdapter.
         viewHolder.mProgressBar.setVisibility(View.INVISIBLE);
         viewHolder.mProgressText.setVisibility(View.INVISIBLE);
         viewHolder.mBuildSize.setVisibility(View.VISIBLE);
-		setButtonAction(viewHolder.mChangelog, Action.CHANGELOG, downloadId, true);
+        setButtonAction(viewHolder.mChangelog, Action.CHANGELOG, downloadId, true);
     }
 
     @Override
@@ -417,7 +417,7 @@ public class UpdatesListAdapter extends RecyclerView.Adapter<UpdatesListAdapter.
                 } : null;
             }
             break;
-			case CHANGELOG: {
+            case CHANGELOG: {
                 clickListener = enabled ? view -> new getChangelogDialog().execute(Utils.getChangelogURL(view.getContext())) : null;
             }
             break;
