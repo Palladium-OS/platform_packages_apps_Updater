@@ -572,8 +572,8 @@ public class UpdatesListAdapter extends RecyclerView.Adapter<UpdatesListAdapter.
                         changelog.openStream()));
 
                 while((inputString = in.readLine()) != null) {
-                    // don't include the top 4 lines of the changelog
-                    if (i >= 4) {
+                    // don't include the top 2 lines of the changelog
+                    if (i >= 2) {
                         outputString += inputString + "\n";
                     }
                     i++;
