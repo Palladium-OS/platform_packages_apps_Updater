@@ -160,4 +160,6 @@
 
     <!-- Maintainer-->
     <string name="maintainer_name">Whom To Blame: <xliff:g id="maintainer" example="Subins Mani">%1$s</xliff:g></string>
+
+    <string name="menu_show_changelog">Show changelog</string>
 </resources>
