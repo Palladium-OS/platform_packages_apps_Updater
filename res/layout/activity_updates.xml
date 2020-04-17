@@ -36,12 +36,12 @@
 
                 <ImageView
                     android:id="@+id/header_image"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="144dp"
+                    android:layout_height="150dp"
                     android:layout_centerHorizontal="true"
-                    android:paddingTop="14dp"
-                    android:paddingBottom="14dp"
-                    android:src="@drawable/ic_update" />
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:src="@drawable/ic_palladium"/>
 
                 <TextView
                     android:id="@+id/header_update_status"
@@ -55,6 +55,13 @@
                     android:textSize="24sp"
                     tools:text="@string/snack_updates_check_failed" />
 
+              <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_below="@id/header_update_status"
+                android:paddingTop="10dp">
+
                 <TextView
                     android:id="@+id/header_build_version"
                     android:layout_width="wrap_content"
@@ -63,7 +70,7 @@
                     android:fontFamily="sans-serif"
                     android:paddingLeft="8dp"
                     android:textColor="?android:attr/textColorPrimary"
-                    android:textSize="14sp" />
+                    android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/header_security_patch"
@@ -73,7 +80,7 @@
                     android:fontFamily="sans-serif"
                     android:paddingLeft="8dp"
                     android:textColor="?android:attr/textColorPrimary"
-                    android:textSize="14sp" />
+                    android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/header_device_name"
@@ -83,7 +90,7 @@
                     android:fontFamily="sans-serif"
                     android:paddingLeft="8dp"
                     android:textColor="?android:attr/textColorPrimary"
-                    android:textSize="14sp" />
+                    android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/maintainer_name"
@@ -93,7 +100,7 @@
                     android:fontFamily="sans-serif"
                     android:paddingLeft="8dp"
                     android:textColor="?android:attr/textColorPrimary"
-                    android:textSize="14sp" />
+                    android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/header_last_check"
@@ -103,7 +110,8 @@
                     android:fontFamily="sans-serif"
                     android:paddingLeft="8dp"
                     android:textColor="?android:attr/textColorPrimary"
-                    android:textSize="14sp" />
+                    android:textSize="12sp" />
+              </LinearLayout>
             </RelativeLayout>
 
             <androidx.appcompat.widget.Toolbar
