@@ -45,6 +45,7 @@ public final class Constants {
     public static final String PROP_RELEASE_TYPE = "ro.palladium.build.type";
     public static final String PROP_UPDATER_ALLOW_DOWNGRADING = "palladium.updater.allow_downgrading";
     public static final String PROP_UPDATER_URI = "palladium.updater.uri";
+    public static final String PROP_VARIANT = "ro.palladium.build.variant";
 
     public static final String PREF_INSTALL_OLD_TIMESTAMP = "install_old_timestamp";
     public static final String PREF_INSTALL_NEW_TIMESTAMP = "install_new_timestamp";
