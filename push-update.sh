@@ -1,6 +1,6 @@
 #!/bin/sh
 
-updates_dir=/data/awaken_updates
+updates_dir=/data/palladium_updates
 
 if [ ! -f "$1" ]; then
    echo "Usage: $0 ZIP [UNVERIFIED]"

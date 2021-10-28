@@ -38,13 +38,12 @@ public final class Constants {
 
     public static final String PROP_AB_DEVICE = "ro.build.ab_update";
     public static final String PROP_BUILD_DATE = "ro.build.date.utc";
-    public static final String PROP_BUILD_VERSION = "ro.awaken.base.version";
-    public static final String PROP_DEVICE = "ro.build.product";
+    public static final String PROP_BUILD_VERSION = "ro.palladium.num.version";
+    public static final String PROP_DEVICE = "ro.palladium.device";
     public static final String PROP_NEXT_DEVICE = "ro.updater.next_device";
-    public static final String PROP_RELEASE_TYPE = "ro.awaken.buildtype";
-    public static final String PROP_UPDATER_ALLOW_DOWNGRADING = "awaken.updater.allow_downgrading";
-    public static final String PROP_UPDATER_URI = "awaken.updater.uri";
-    public static final String PROP_ZIP_TYPE = "ro.awaken.ziptype";
+    public static final String PROP_RELEASE_TYPE = "ro.palladium.buildtype";
+    public static final String PROP_UPDATER_ALLOW_DOWNGRADING = "palladium.updater.allow_downgrading";
+    public static final String PROP_UPDATER_URI = "palladium.updater.uri";
 
     public static final String PREF_INSTALL_OLD_TIMESTAMP = "install_old_timestamp";
     public static final String PREF_INSTALL_NEW_TIMESTAMP = "install_new_timestamp";

@@ -34,7 +34,7 @@
                 android:paddingBottom="8sp"
                 android:textColor="?android:attr/textColorPrimary"
                 android:textSize="16sp"
-                tools:text="Project-Awaken" />
+                tools:text="Palladium-OS" />
 
             <TextView
                 android:id="@+id/build_date"
