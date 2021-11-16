@@ -37,7 +37,7 @@ public final class Constants {
     public static final String UNCRYPT_FILE_EXT = ".uncrypt";
 
     public static final String PROP_AB_DEVICE = "ro.build.ab_update";
-    public static final String PROP_BUILD_DATE = "ro.build.date.utc";
+    public static final String PROP_BUILD_DATE = "ro.palladium.build.datetime";
     public static final String PROP_BUILD_VERSION = "ro.palladium.num.version";
     public static final String PROP_DEVICE = "ro.palladium.device";
     public static final String PROP_NEXT_DEVICE = "ro.updater.next_device";
