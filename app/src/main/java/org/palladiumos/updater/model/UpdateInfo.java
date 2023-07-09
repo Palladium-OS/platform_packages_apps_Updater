@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 The LineageOS Project
+ * Copyright (C) 2017 Palladium-OS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,20 +13,28 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lineageos.updater.misc;
+package org.palladiumos.updater.model;
 
-import android.os.SystemProperties;
+import java.io.File;
 
-public final class BuildInfoUtils {
+public interface UpdateInfo extends UpdateBaseInfo {
+    UpdateStatus getStatus();
 
-    private BuildInfoUtils() {
-    }
+    int getPersistentStatus();
 
-    public static long getBuildDateTimestamp() {
-        return SystemProperties.getLong(Constants.PROP_BUILD_DATE, 0);
-    }
+    File getFile();
 
-    public static String getBuildVersion() {
-        return SystemProperties.get(Constants.PROP_BUILD_VERSION);
-    }
+    long getFileSize();
+
+    int getProgress();
+
+    long getEta();
+
+    long getSpeed();
+
+    int getInstallProgress();
+
+    boolean getAvailableOnline();
+
+    boolean getFinalizing();
 }

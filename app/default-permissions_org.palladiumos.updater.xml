@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes' ?>
 <!--
-     Copyright (C) 2022 The LineageOS Project
+     Copyright (C) 2022 Palladium-OS
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
      limitations under the License.
 -->
 <exceptions>
-    <exception package="org.lineageos.updater">
+    <exception package="org.palladiumos.updater">
         <!-- Notifications -->
         <permission name="android.permission.POST_NOTIFICATIONS" fixed="false"/>
     </exception>

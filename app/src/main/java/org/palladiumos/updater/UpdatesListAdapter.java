@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017-2023 The LineageOS Project
+ * Copyright (C) 2017-2023 Palladium-OS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lineageos.updater;
+package org.palladiumos.updater;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -53,14 +53,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.snackbar.Snackbar;
 
-import org.lineageos.updater.controller.UpdaterController;
-import org.lineageos.updater.controller.UpdaterService;
-import org.lineageos.updater.misc.BuildInfoUtils;
-import org.lineageos.updater.misc.Constants;
-import org.lineageos.updater.misc.StringGenerator;
-import org.lineageos.updater.misc.Utils;
-import org.lineageos.updater.model.UpdateInfo;
-import org.lineageos.updater.model.UpdateStatus;
+import org.palladiumos.updater.controller.UpdaterController;
+import org.palladiumos.updater.controller.UpdaterService;
+import org.palladiumos.updater.misc.BuildInfoUtils;
+import org.palladiumos.updater.misc.Constants;
+import org.palladiumos.updater.misc.StringGenerator;
+import org.palladiumos.updater.misc.Utils;
+import org.palladiumos.updater.model.UpdateInfo;
+import org.palladiumos.updater.model.UpdateStatus;
 
 import java.io.IOException;
 import java.text.DateFormat;

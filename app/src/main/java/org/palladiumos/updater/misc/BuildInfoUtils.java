@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 The LineageOS Project
+ * Copyright (C) 2017 Palladium-OS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,13 +13,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lineageos.updater;
+package org.palladiumos.updater.misc;
 
-import androidx.appcompat.app.AppCompatActivity;
+import android.os.SystemProperties;
 
-import org.lineageos.updater.model.UpdateInfo;
+public final class BuildInfoUtils {
 
-public abstract class UpdatesListActivity extends AppCompatActivity {
-    public abstract void exportUpdate(UpdateInfo update);
-    public abstract void showSnackbar(int stringId, int duration);
+    private BuildInfoUtils() {
+    }
+
+    public static long getBuildDateTimestamp() {
+        return SystemProperties.getLong(Constants.PROP_BUILD_DATE, 0);
+    }
+
+    public static String getBuildVersion() {
+        return SystemProperties.get(Constants.PROP_BUILD_VERSION);
+    }
 }

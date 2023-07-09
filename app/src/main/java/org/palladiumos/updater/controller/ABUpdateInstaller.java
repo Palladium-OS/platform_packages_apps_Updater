@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017-2022 The LineageOS Project
+ * Copyright (C) 2017-2022 Palladium-OS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lineageos.updater.controller;
+package org.palladiumos.updater.controller;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -24,10 +24,10 @@ import android.util.Log;
 
 import androidx.preference.PreferenceManager;
 
-import org.lineageos.updater.misc.Constants;
-import org.lineageos.updater.misc.Utils;
-import org.lineageos.updater.model.Update;
-import org.lineageos.updater.model.UpdateStatus;
+import org.palladiumos.updater.misc.Constants;
+import org.palladiumos.updater.misc.Utils;
+import org.palladiumos.updater.model.Update;
+import org.palladiumos.updater.model.UpdateStatus;
 
 import java.io.BufferedReader;
 import java.io.File;
