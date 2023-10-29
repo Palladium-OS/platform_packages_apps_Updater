@@ -65,7 +65,7 @@
                     android:layout_below="@id/header_title"
                     android:textColor="?android:attr/textColorPrimary"
                     android:textSize="12sp"
-                    tools:text="Android 13"/>
+                    tools:text="Android 14"/>
 
                 <TextView
                     android:id="@+id/header_build_date"

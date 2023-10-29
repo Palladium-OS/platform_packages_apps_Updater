@@ -40,7 +40,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="?android:attr/textColorPrimary"
                 android:textSize="14sp"
-                tools:text="Android 13"/>
+                tools:text="Android 14"/>
 
             <TextView
                 android:id="@+id/header_build_date"
